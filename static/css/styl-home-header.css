@@ -1,0 +1,244 @@
+header>div.top-logo{
+    margin-top:35px;
+    overflow: hidden;
+}
+
+header>div, header>div.top>ul{
+    max-width: 1282px;
+    width: 100%;
+    margin: auto;
+}
+
+div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.logo{
+    width: calc(100% - 427px);
+    display: block;
+    float: left;
+}
+
+.logo .logo-table{
+    display: table;
+    height: 145px;
+}
+
+.logo .logo-table>div{
+    display: table-cell;
+    vertical-align: middle;
+}
+/*
+.logo .logo-table>div, top>ul li, header>div.top>ul li{
+    vertical-align: middle;
+}*/
+
+.logo .push-address{
+    padding-left: 40px;
+    position: relative;
+}
+/*
+.logo .push-address:before{
+    /*content: "";
+    width: 1px;
+    height: 145px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000;
+}*/
+
+.logo .push-address .title{
+    margin-bottom: 21px;
+}
+
+.title{
+    color: #000;
+    line-height: 1em;
+}
+
+.title.title-25, .title.title-28{
+    font-size: 40px;
+    font-weight: 400;
+    font-family: brandon_grotesque_regularRg,arial,sans-serif;
+}
+
+a, h1, h2, h3, h4, h5, strong, span{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+h1{
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.push.push-address p{
+    margin-bottom: 5px;
+}
+
+.push .text-new .description, .push.push-address p{
+    font-family: brandon_grotesque_regularRg,arial,sans-serif;
+    font-size: 15px;
+}
+
+p{
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/*p{
+    /*display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;}*/
+
+
+.push.push-address p strong{
+    font-family: brandon_grotesquebold,arial,sans-serif;
+}
+
+.clr-or{
+    color: #ff953e;
+}
+
+b, optgroup, strong{
+    font-weight: 700;
+}
+
+.push.push-go-to-page.orange{
+    background-color: #ff953e;
+}
+
+header>div.top-logo .push-go-to-page{
+    float: right;
+    width: 427px;
+    padding: 20px 58px;
+}
+
+.push.push-go-to-page{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.push.push-go-to-page .title{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.title.title-20{
+    font-family: brandon_grotesqueblack,arial,sans-serif;
+}
+
+.title.title-20, .title.title-21{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.border-title{
+    display: block;
+    width: 188px;
+    height: 12px;
+    position: relative;
+    margin: 10px auto 0;
+    box-sizing: border-box;
+    font-family: arial;
+    color: #000;
+    line-height: 12px;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.border-title:before{
+    left: 0;
+    right: auto;
+    z-index: 0;
+}
+
+.border-title:before, .border-title:after{
+    height: 1px;
+    background: #000;
+    width: 86px;
+    position: absolute;
+    top: 5px;
+    content: "";
+}
+
+.border-title:after{
+    margin: auto;
+    left: auto;
+    right: 0;
+}
+
+.push.push-go-to-page p{
+    line-height: 1.2em;
+}
+
+p{
+    font-size: 15px;
+    font-family: brandon_grotesque_regularRg,arial,sans-serif;
+}
+
+.push.push-go-to-page .btn{
+    margin: 20px auto 0;
+}
+
+.btn.whiteBlack{
+    background-color: #fff;
+    color: #000;
+}
+
+.btn{
+    display: block;
+    width: 164px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 11px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: brandon_grotesqueblack,arial,sans-serif;
+    padding: 0 0 0 10px;
+    border: 0;
+    border-radius: 0;
+    text-align: left;
+}
+
+.btn:before{
+    content: "-->";
+    font-size: 26px;
+    width: 38px;
+    height: 24px;
+    text-align: center;
+    line-height: 21px;
+}
+
+.btn.whiteBlack:before{
+    background-color: #000;
+    color: #fff;
+}
+
+.btn:before, .btn.alignRight{
+    float: right;
+}
+
+.open-menu{
+    display: none;
+}

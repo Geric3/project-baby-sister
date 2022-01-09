@@ -1,0 +1,577 @@
+.small-box {
+    position: relative;
+    display: block;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 9px;
+    margin-bottom: 15px;
+}
+.bg-yellow {
+    background-color: #ec943ad9 !important;
+}
+.bg-red, .bg-yellow, .bg-aqua, .bg-blue, .bg-light-blue, .bg-green, .bg-navy, .bg-teal, .bg-olive, .bg-lime, .bg-orange, .bg-fuchsia, .bg-purple, .bg-maroon, .bg-black {
+    color: #f9f9f9 !important;
+}
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333;
+}
+html {
+    font-size: 62.5%;
+}
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+	}
+.small-box > .inner {
+    padding: 10px;
+}
+small-box .icon {
+    position: absolute;
+    top: auto;
+    bottom: 5px;
+    right: 5px;
+    z-index: 0;
+    font-size: 90px;
+    color: rgba(0, 0, 0, 0.15);
+}
+
+.ion, .ion-loading-a, .ion-loading-b, .ion-loading-c, .ion-loading-d, .ion-looping, .ion-refreshing, .ion-ios7-reloading, .ionicons, .ion-alert, .ion-alert-circled, .ion-android-add, .ion-android-add-contact, .ion-android-alarm, .ion-android-archive, .ion-android-arrow-back, .ion-android-arrow-down-left, .ion-android-arrow-down-right, .ion-android-arrow-up-left, .ion-android-arrow-up-right, .ion-android-battery, .ion-android-book, .ion-android-calendar, .ion-android-call, .ion-android-camera, .ion-android-chat, .ion-android-checkmark, .ion-android-clock, .ion-android-close, .ion-android-contact, .ion-android-contacts, .ion-android-data, .ion-android-developer, .ion-android-display, .ion-android-download, .ion-android-dropdown, .ion-android-earth, .ion-android-folder, .ion-android-forums, .ion-android-friends, .ion-android-hand, .ion-android-image, .ion-android-inbox, .ion-android-information, .ion-android-keypad, .ion-android-lightbulb, .ion-android-locate, .ion-android-location, .ion-android-mail, .ion-android-microphone, .ion-android-mixer, .ion-android-more, .ion-android-note, .ion-android-playstore, .ion-android-printer, .ion-android-promotion, .ion-android-reminder, .ion-android-remove, .ion-android-search, .ion-android-send, .ion-android-settings, .ion-android-share, .ion-android-social, .ion-android-social-user, .ion-android-sort, .ion-android-star, .ion-android-stopwatch, .ion-android-storage, .ion-android-system-back, .ion-android-system-home, .ion-android-system-windows, .ion-android-timer, .ion-android-trash, .ion-android-volume, .ion-android-wifi, .ion-archive, .ion-arrow-down-a, .ion-arrow-down-b, .ion-arrow-down-c, .ion-arrow-expand, .ion-arrow-graph-down-left, .ion-arrow-graph-down-right, .ion-arrow-graph-up-left, .ion-arrow-graph-up-right, .ion-arrow-left-a, .ion-arrow-left-b, .ion-arrow-left-c, .ion-arrow-move, .ion-arrow-resize, .ion-arrow-return-left, .ion-arrow-return-right, .ion-arrow-right-a, .ion-arrow-right-b, .ion-arrow-right-c, .ion-arrow-shrink, .ion-arrow-swap, .ion-arrow-up-a, .ion-arrow-up-b, .ion-arrow-up-c, .ion-at, .ion-bag, .ion-battery-charging, .ion-battery-empty, .ion-battery-full, .ion-battery-half, .ion-battery-low, .ion-beaker, .ion-beer, .ion-bluetooth, .ion-bookmark, .ion-briefcase, .ion-bug, .ion-calculator, .ion-calendar, .ion-camera, .ion-card, .ion-chatbox, .ion-chatbox-working, .ion-chatboxes, .ion-chatbubble, .ion-chatbubble-working, .ion-chatbubbles, .ion-checkmark, .ion-checkmark-circled, .ion-checkmark-round, .ion-chevron-down, .ion-chevron-left, .ion-chevron-right, .ion-chevron-up, .ion-clipboard, .ion-clock, .ion-close, .ion-close-circled, .ion-close-round, .ion-cloud, .ion-code, .ion-code-download, .ion-code-working, .ion-coffee, .ion-compass, .ion-compose, .ion-connection-bars, .ion-contrast, .ion-disc, .ion-document, .ion-document-text, .ion-drag, .ion-earth, .ion-edit, .ion-egg, .ion-eject, .ion-email, .ion-eye, .ion-eye-disabled, .ion-female, .ion-filing, .ion-film-marker, .ion-flag, .ion-flash, .ion-flash-off, .ion-flask, .ion-folder, .ion-fork, .ion-fork-repo, .ion-forward, .ion-game-controller-a, .ion-game-controller-b, .ion-gear-a, .ion-gear-b, .ion-grid, .ion-hammer, .ion-headphone, .ion-heart, .ion-help, .ion-help-buoy, .ion-help-circled, .ion-home, .ion-icecream, .ion-icon-social-google-plus, .ion-icon-social-google-plus-outline, .ion-image, .ion-images, .ion-information, .ion-information-circled, .ion-ionic, .ion-ios7-alarm, .ion-ios7-alarm-outline, .ion-ios7-albums, .ion-ios7-albums-outline, .ion-ios7-arrow-back, .ion-ios7-arrow-down, .ion-ios7-arrow-forward, .ion-ios7-arrow-left, .ion-ios7-arrow-right, .ion-ios7-arrow-thin-down, .ion-ios7-arrow-thin-left, .ion-ios7-arrow-thin-right, .ion-ios7-arrow-thin-up, .ion-ios7-arrow-up, .ion-ios7-at, .ion-ios7-at-outline, .ion-ios7-bell, .ion-ios7-bell-outline, .ion-ios7-bolt, .ion-ios7-bolt-outline, .ion-ios7-bookmarks, .ion-ios7-bookmarks-outline, .ion-ios7-box, .ion-ios7-box-outline, .ion-ios7-briefcase, .ion-ios7-briefcase-outline, .ion-ios7-browsers, .ion-ios7-browsers-outline, .ion-ios7-calculator, .ion-ios7-calculator-outline, .ion-ios7-calendar, .ion-ios7-calendar-outline, .ion-ios7-camera, .ion-ios7-camera-outline, .ion-ios7-cart, .ion-ios7-cart-outline, .ion-ios7-chatboxes, .ion-ios7-chatboxes-outline, .ion-ios7-chatbubble, .ion-ios7-chatbubble-outline, .ion-ios7-checkmark, .ion-ios7-checkmark-empty, .ion-ios7-checkmark-outline, .ion-ios7-circle-filled, .ion-ios7-circle-outline, .ion-ios7-clock, .ion-ios7-clock-outline, .ion-ios7-close, .ion-ios7-close-empty, .ion-ios7-close-outline, .ion-ios7-cloud, .ion-ios7-cloud-download, .ion-ios7-cloud-download-outline, .ion-ios7-cloud-outline, .ion-ios7-cloud-upload, .ion-ios7-cloud-upload-outline, .ion-ios7-cloudy, .ion-ios7-cloudy-night, .ion-ios7-cloudy-night-outline, .ion-ios7-cloudy-outline, .ion-ios7-cog, .ion-ios7-cog-outline, .ion-ios7-compose, .ion-ios7-compose-outline, .ion-ios7-contact, .ion-ios7-contact-outline, .ion-ios7-copy, .ion-ios7-copy-outline, .ion-ios7-download, .ion-ios7-download-outline, .ion-ios7-drag, .ion-ios7-email, .ion-ios7-email-outline, .ion-ios7-eye, .ion-ios7-eye-outline, .ion-ios7-fastforward, .ion-ios7-fastforward-outline, .ion-ios7-filing, .ion-ios7-filing-outline, .ion-ios7-film, .ion-ios7-film-outline, .ion-ios7-flag, .ion-ios7-flag-outline, .ion-ios7-folder, .ion-ios7-folder-outline, .ion-ios7-gear, .ion-ios7-gear-outline, .ion-ios7-glasses, .ion-ios7-glasses-outline, .ion-ios7-heart, .ion-ios7-heart-outline, .ion-ios7-help, .ion-ios7-help-empty, .ion-ios7-help-outline, .ion-ios7-infinite, .ion-ios7-infinite-outline, .ion-ios7-information, .ion-ios7-information-empty, .ion-ios7-information-outline, .ion-ios7-ionic-outline, .ion-ios7-keypad, .ion-ios7-keypad-outline, .ion-ios7-lightbulb, .ion-ios7-lightbulb-outline, .ion-ios7-location, .ion-ios7-location-outline, .ion-ios7-locked, .ion-ios7-locked-outline, .ion-ios7-medkit, .ion-ios7-medkit-outline, .ion-ios7-mic, .ion-ios7-mic-off, .ion-ios7-mic-outline, .ion-ios7-minus, .ion-ios7-minus-empty, .ion-ios7-minus-outline, .ion-ios7-monitor, .ion-ios7-monitor-outline, .ion-ios7-moon, .ion-ios7-moon-outline, .ion-ios7-more, .ion-ios7-more-outline, .ion-ios7-musical-note, .ion-ios7-musical-notes, .ion-ios7-navigate, .ion-ios7-navigate-outline, .ion-ios7-paperplane, .ion-ios7-paperplane-outline, .ion-ios7-partlysunny, .ion-ios7-partlysunny-outline, .ion-ios7-pause, .ion-ios7-pause-outline, .ion-ios7-people, .ion-ios7-people-outline, .ion-ios7-person, .ion-ios7-person-outline, .ion-ios7-personadd, .ion-ios7-personadd-outline, .ion-ios7-photos, .ion-ios7-photos-outline, .ion-ios7-pie, .ion-ios7-pie-outline, .ion-ios7-play, .ion-ios7-play-outline, .ion-ios7-plus, .ion-ios7-plus-empty, .ion-ios7-plus-outline, .ion-ios7-pricetag, .ion-ios7-pricetag-outline, .ion-ios7-printer, .ion-ios7-printer-outline, .ion-ios7-rainy, .ion-ios7-rainy-outline, .ion-ios7-recording, .ion-ios7-recording-outline, .ion-ios7-redo, .ion-ios7-redo-outline, .ion-ios7-refresh, .ion-ios7-refresh-empty, .ion-ios7-refresh-outline, .ion-ios7-reload, .ion-ios7-rewind, .ion-ios7-rewind-outline, .ion-ios7-search, .ion-ios7-search-strong, .ion-ios7-skipbackward, .ion-ios7-skipbackward-outline, .ion-ios7-skipforward, .ion-ios7-skipforward-outline, .ion-ios7-snowy, .ion-ios7-speedometer, .ion-ios7-speedometer-outline, .ion-ios7-star, .ion-ios7-star-outline, .ion-ios7-stopwatch, .ion-ios7-stopwatch-outline, .ion-ios7-sunny, .ion-ios7-sunny-outline, .ion-ios7-telephone, .ion-ios7-telephone-outline, .ion-ios7-thunderstorm, .ion-ios7-thunderstorm-outline, .ion-ios7-time, .ion-ios7-time-outline, .ion-ios7-timer, .ion-ios7-timer-outline, .ion-ios7-trash, .ion-ios7-trash-outline, .ion-ios7-undo, .ion-ios7-undo-outline, .ion-ios7-unlocked, .ion-ios7-unlocked-outline, .ion-ios7-upload, .ion-ios7-upload-outline, .ion-ios7-videocam, .ion-ios7-videocam-outline, .ion-ios7-volume-high, .ion-ios7-volume-low, .ion-ios7-wineglass, .ion-ios7-wineglass-outline, .ion-ios7-world, .ion-ios7-world-outline, .ion-ipad, .ion-iphone, .ion-ipod, .ion-jet, .ion-key, .ion-knife, .ion-laptop, .ion-leaf, .ion-levels, .ion-lightbulb, .ion-link, .ion-load-a, .ion-load-b, .ion-load-c, .ion-load-d, .ion-location, .ion-locked, .ion-log-in, .ion-log-out, .ion-loop, .ion-magnet, .ion-male, .ion-man, .ion-map, .ion-medkit, .ion-mic-a, .ion-mic-b, .ion-mic-c, .ion-minus, .ion-minus-circled, .ion-minus-round, .ion-model-s, .ion-monitor, .ion-more, .ion-music-note, .ion-navicon, .ion-navicon-round, .ion-navigate, .ion-no-smoking, .ion-nuclear, .ion-paper-airplane, .ion-paperclip, .ion-pause, .ion-person, .ion-person-add, .ion-person-stalker, .ion-pie-graph, .ion-pin, .ion-pinpoint, .ion-pizza, .ion-plane, .ion-play, .ion-playstation, .ion-plus, .ion-plus-circled, .ion-plus-round, .ion-pound, .ion-power, .ion-pricetag, .ion-pricetags, .ion-printer, .ion-radio-waves, .ion-record, .ion-refresh, .ion-reply, .ion-reply-all, .ion-search, .ion-settings, .ion-share, .ion-shuffle, .ion-skip-backward, .ion-skip-forward, .ion-social-android, .ion-social-android-outline, .ion-social-apple, .ion-social-apple-outline, .ion-social-bitcoin, .ion-social-bitcoin-outline, .ion-social-buffer, .ion-social-buffer-outline, .ion-social-designernews, .ion-social-designernews-outline, .ion-social-dribbble, .ion-social-dribbble-outline, .ion-social-dropbox, .ion-social-dropbox-outline, .ion-social-facebook, .ion-social-facebook-outline, .ion-social-freebsd-devil, .ion-social-github, .ion-social-github-outline, .ion-social-googleplus, .ion-social-googleplus-outline, .ion-social-hackernews, .ion-social-hackernews-outline, .ion-social-linkedin, .ion-social-linkedin-outline, .ion-social-pinterest, .ion-social-pinterest-outline, .ion-social-reddit, .ion-social-reddit-outline, .ion-social-rss, .ion-social-rss-outline, .ion-social-skype, .ion-social-skype-outline, .ion-social-tumblr, .ion-social-tumblr-outline, .ion-social-tux, .ion-social-twitter, .ion-social-twitter-outline, .ion-social-vimeo, .ion-social-vimeo-outline, .ion-social-windows, .ion-social-windows-outline, .ion-social-wordpress, .ion-social-wordpress-outline, .ion-social-yahoo, .ion-social-yahoo-outline, .ion-social-youtube, .ion-social-youtube-outline, .ion-speakerphone, .ion-speedometer, .ion-spoon, .ion-star, .ion-stats-bars, .ion-steam, .ion-stop, .ion-thermometer, .ion-thumbsdown, .ion-thumbsup, .ion-trash-a, .ion-trash-b, .ion-umbrella, .ion-unlocked, .ion-upload, .ion-usb, .ion-videocamera, .ion-volume-high, .ion-volume-low, .ion-volume-medium, .ion-volume-mute, .ion-waterdrop, .ion-wifi, .ion-wineglass, .ion-woman, .ion-wrench, .ion-xbox {
+    display: inline-block;
+    font-family: "Ionicons";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.small-box > .small-box-footer {
+    position: relative;
+    text-align: center;
+    padding: 3px 0;
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    z-index: 10;
+    background: rgba(0 0 0 / 20%);
+    text-decoration: none;
+}
+a {
+    color: #3c8dbc;
+}
+a {
+    color: #428bca;
+    text-decoration: none;
+}
+a {
+    background: transparent;
+}
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-arrow-circle-right::before {
+    content: "\f0a9";
+}
+.user-panel {
+    padding: 10px;
+	margin-top:40px;
+}
+.pull-left  {
+    float: left;
+}
+.pull-left {
+    float: left !important;
+}
+.skin-blue .user-panel > .image > img {
+    border: 1px solid #dfdfdf;
+}
+.user-panel > .image > img {
+    width: 95px;
+    height: 95px;
+}
+.img-circle {
+    border-radius: 50%;
+}
+img {
+    max-width: 100%important;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 4px;
+}
+.skin-blue .user-panel > .info, .skin-blue .user-panel > .info > a {
+    color: #555555;
+}
+.user-panel > .info {
+    font-weight: 600;
+    padding: 5px 5px 5px 15px;
+    font-size: 14px;
+    line-height: 1;
+}
+.user-panel > .info > p {
+    margin-bottom: 9px;
+}
+p {
+    margin: 0 0 10px;
+}
+.skin-blue .user-panel > .info, .skin-blue .user-panel > .info > a {
+    color: #555555;
+}
+.skin-blue .sidebar a {
+    color: #555555;
+}
+.user-panel > .info > a {
+    text-decoration: none;
+    padding-right: 5px;
+    margin-top: 3px;
+    font-size: 11px;
+    font-weight: normal;
+}
+.user-panel::after {
+    clear: both;
+}
+.user-panel::before, .user-panel::after {
+    display: table;
+    content: " ";
+}
+html, body {
+    overflow-x: hidden !important;
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100%;
+    background: #f9f9f9;
+}
+html {
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333;
+    background-color: #fff;
+}
+body {
+    margin: 0;
+}
+body > .header {
+    position: relative;
+    max-height: 100px;
+    z-index: 1030;
+}
+body > .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+body > .header .logo {
+    float: left;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    padding: 0 10px;
+    width: 220px;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 500;
+    height: 178px;
+    display: block;
+}
+.skin-blue .logo {
+    background-color: #3abd3adb;
+    color: #f9f9f9;
+}
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+b, strong {
+    font-weight: bold;
+}
+body > .header .navbar {
+    height: 80px;
+    margin-bottom: 0;
+    
+}
+.skin-blue .navbar {
+    background-color: #3c8dbc;
+}
+.navbar-static-top {
+    border-radius: 0;
+}
+.navbar-static-top {
+    z-index: 1000;
+    border-width: 0 0 1px;
+}
+.navbar {
+    border-radius: 4px;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+body > .header .navbar .sidebar-toggle {
+    float: left;
+    padding: 9px 5px;
+    margin-top: 8px;
+    margin-right: 0;
+    margin-bottom: 8px;
+    margin-left: 5px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+.navbar-btn {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+body > .header .navbar .sidebar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.skin-blue .navbar .sidebar-toggle .icon-bar {
+    background: rgba(255, 255, 255, 0.8);
+}
+.navbar-right {
+    float: right !important;
+}
+.skin-blue .navbar .navbar-right > .nav {
+    margin-right: 75px;
+}
+.navbar-nav {
+    float: left;
+    margin: 0;
+}
+.navbar-nav {
+    margin: 7.5px -15px;
+    
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.navbar-nav > li {
+    float: left;
+}
+.nav > li {
+    position: relative;
+    display: block;
+}
+.dropdown {
+    position: relative;
+}
+.skin-blue .navbar .nav a {
+    color: rgba(255, 255, 255, 0.8);
+}
+.navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+.navbar-nav > .notifications-menu > .dropdown-menu, .navbar-nav > .messages-menu > .dropdown-menu, .navbar-nav > .tasks-menu > .dropdown-menu {
+    width: 280px;
+    padding: 0 0 0 0 !important;
+    margin: 0 !important;
+    top: 100%;
+    border: 1px solid #dfdfdf;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+}
+.navbar-nav > li > .dropdown-menu {
+    margin-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.navbar-right .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+.dropdown-menu {
+    -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2300;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    background-clip: padding-box;
+}
+ul ul, ol ul, ul ol, ol ol {
+    margin-bottom: 0;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.navbar-nav > li {
+    float: left;
+}
+.nav > li {
+    position: relative;
+    margin-left: 90px;
+    display: block;
+}
+.dropdown {
+    position: relative;
+}
+body > .header .navbar .nav > li.user > a {
+    font-weight: bold;
+}
+.skin-blue .navbar .nav a {
+    color: rgba(255, 255, 255, 0.8);
+}
+.navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.navbar-nav > .user-menu > .dropdown-menu > li.user-header > p {
+    z-index: 5;
+    color: #f9f9f9;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 17px;
+    text-shadow: 2px 2px 3px #333333;
+    margin-top: 10px;
+}
+p {
+    margin: 0 0 10px;
+}
+.wrapper {
+    min-height: 100%;
+}
+.skin-blue .left-side {
+    background: #f4f4f4;
+    -webkit-box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.1);
+    box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.07);
+}
+.left-side {
+    top: 50px;
+}
+.left-side {
+    position: absolute;
+    width: 220px;
+    top: 0;
+}
+.right-side, .left-side {
+    min-height: 100%;
+    display: block;
+}
+.skin-blue .sidebar {
+    border-bottom: 1px solid #fff;
+}
+.sidebar {
+    margin-bottom: 5px;
+}
+.right-side {
+    background-color: #f9f9f9;
+    
+}
+.right-side, .left-side {
+    min-height: 100%;
+    display: block;
+}
+.skin-blue .right-side > .content-header {
+    background: #fbfbfb;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.right-side > .content-header {
+    position: relative;
+    padding: 15px 15px 10px 20px;
+	margin-top:80px;
+}
+.right-side > .content-header > h1 {
+    margin: 0;
+    font-size: 24px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1, .h1 {
+    font-size: 36px;
+}
+h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+h1 {
+    margin: .67em 0;
+    font-size: 2em;
+}
+.right-side > .content-header > h1 > small {
+    font-size: 15px;
+    display: inline-block;
+    padding-left: 4px;
+    font-weight: 300;
+}
+h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
+    font-size: 65%;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
+    font-weight: normal;
+    line-height: 1;
+    color: #999;
+}
+small, .small {
+    font-size: 85%;
+}
+small {
+    font-size: 80%;
+}
+.right-side > .content-header > .breadcrumb {
+    float: right;
+    background: transparent;
+    margin-top: 0px;
+    margin-bottom: 0;
+    font-size: 12px;
+    padding: 7px 5px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.breadcrumb > li {
+    display: inline-block;
+}
+.breadcrumb > .active {
+    color: #999;
+}
+.breadcrumb > li {
+    display: inline-block;
+}
+.content {
+    padding: 20px 15px;
+    background: #f9f9f9;
+	margin-top:40px;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.row::before, .row::after {
+    display: table;
+    content: " ";
+}
+.row::before, .row::after {
+    display: table;
+    content: " ";
+}
+.col-xs-6 {
+    width: 33%;
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    float: left;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    /*padding-right: 15px;*/
+    padding-left: 15px;
+    padding-top: 20px;
+}

@@ -1,0 +1,82 @@
+
+
+body
+{
+   color:#9a7403;
+   background-color:#DFEAF0;
+}
+/*header*/
+header{
+   background: url("12592749_880421792073474_1603243256072924045_n.jpg") repeat-x botton;
+}
+nav {
+   display:inline-block;
+   width:15px;
+
+   text-align:right;
+   margin-left:400px;
+}
+#titre_principal{
+   display:inline-block;
+}
+nav ul {
+   list-style-type:none;
+
+}
+nav li {
+   display:inline-block;
+   margin-right:150px;
+}
+nav a {
+   font-size:1.1em;
+   color:181818;
+   padding-bottom:3px;
+   text-decoration:none;
+   /*display:inline-block;*/
+}
+nav a:hover{
+   color:#2599FD;
+   border-bottom:3px solid #259947;
+}
+#choix{
+   font-size:1.5em;
+   margin-left:200px;
+   margin-bottom:100px;
+   margin-top:200px;
+}
+.pos{
+   float:left;
+   margin-left:10px;
+}
+p{
+   border:0px solid white;
+   width:350px;
+   height:50px;
+   text-align:justify;
+   margin:auto;
+   margin:right;
+}
+ ul{
+
+   text-align:justify;
+   padding-left:70px;
+   margin:right;
+   margin-left:80px;
+}
+.profil_nounou{
+   border:3px solid #DFEA90;
+   width:350px;
+   margin:auto;
+
+   /*text-align:justify;*/
+
+   margin:right;
+   
+   	/*text-shadow:0 0 7px rgba(0,0,0,1);*/
+
+}
+a{background:transparent}
+
+a:focus{outline:thin dotted}
+
+a:active,a:hover{outline:0}

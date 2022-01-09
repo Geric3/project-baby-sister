@@ -1,0 +1,141 @@
+.section.full-background:first-child{
+    padding: :0;
+}
+
+.section.full-background{
+    background-color: #f9f9f9;
+    width: 100%;
+    margin: 250px 0 0;
+    max-width: 100%;
+}
+
+section{
+    display: block;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+
+}
+
+#visual-page>div{
+    position: relative;
+    overflow: hidden;
+}
+
+#visual-page .push-visuel-head{
+    position: absolute;
+    top: 75%;
+    transform: translateY(-170%);
+    right: 40px;
+}
+
+.push-visuel-head{
+    width: 349px;
+    height: auto;
+    text-align: center;
+}
+
+.section.full-background>div{
+    max-width: 1282px;
+    min-width: 1282px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.push-visuel-head .title{
+    font-family: brandon_grotesque_regularRg,arial,sans-serif;
+}
+
+.title.title-20, title.title-21{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.title{
+    color: #000;
+    line-height: 1em;
+}
+
+.push-visuel-head .legende{
+    text-align: center;
+    font-family: pacificoregular,arial,sans-serif;
+    font-size: 20px;
+    color: #ff953e;
+    margin-top: 5px;
+}
+
+.push-visuel-head p{
+    font-family: brandon_grotesque_regularRg,arial,sans-serif;
+    font-size: 15px;
+    color: #000;
+    margin-top: 23px;
+    text-align: center
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    line-height: 1.5em;
+    vertical-align: baseline;
+    /*display: block;*/
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+div{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    /*display: block;*/
+}
+
+.row::before{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+*{
+    outline: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    border: 0;
+    font: inherit;
+    line-height: 1.2em;
+    vertical-align: baseline;
+}
+
+h1{
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h2{
+    margin-block-start: 0.83em;
+    margin-block-end: 00.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+body{
+    color: #333333;
+}
+
+html{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

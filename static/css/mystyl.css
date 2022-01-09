@@ -1,0 +1,42 @@
+.right-nav{
+    width: calc(100% - 34%);
+    float: left;
+    padding-left: 29px;
+    padding-top: 49px;
+    /*background-color: #191919;*/
+}
+
+.left-nav{
+    width: 34%;
+    float: left;
+    line-height: 299px;
+    text-align: center;
+    color: #de9022;
+}
+
+.left-nav, .right-nav{
+    height: 990px;
+    overflow: hidden;
+}
+
+div, p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    
+    vertical-align: baseline;
+}
+
+.left-nav>p{
+    margin-right: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-size: 20px;
+}
+
+.imag-large-size{
+    width: calc(100% + 104px);
+    overflow: hidden;
+}

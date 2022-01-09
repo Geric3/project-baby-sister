@@ -1,0 +1,187 @@
+   <!--<div id="about" class="aboutClass">
+       Nous offrons a vous parents, a la recherche d'une nourice, le meilleur service de qualite en fonction de vos besoin present.
+   </div>-->
+   <header class="header">
+        <a href="" class="logo1">
+            <!-- Add the class icon to your logo image or logo icon to add the margining -->
+            <!--<i style="color: orange" class="fa fa-group"></i>
+             <i style="color: orange"><b>AgenceFamiliale</b></i>-->
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+            <!-- Sidebar toggle button-->
+           <!-- <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>-->
+            <div class="navbar-right">
+
+                <!--{% if request.user.is_authenticated %}-->
+                <ul class="nav navbar-nav">
+                    <!-- a propos du site -->
+                    <li  class="dropdown tasks-menu">
+                        <a href="{% url 'recrues:homepage' %}">
+                            <i class="fa fa-tasks"></i>
+                            <span class="label label-danger"> Accueil</span>
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown tasks-menu">
+                        <a href="{% url 'recrues:enrollment' %}">
+                            <i class="fa fa-tasks"></i>
+                            <span class="label label-danger">S'incrire sur la plateforme</span>
+                        </a>
+                    </li>
+                    <li class="dropdown tasks-menu">
+                        <a href="{% url 'recrues:listerecrues' %}">
+                            <i class="fa fa-tasks"></i>
+                            <span class="label label-danger">consulter nos recrues</span>
+                        </a>
+                    </li>
+                    <li  class="dropdown tasks-menu">
+                        <a href="About us"  class="dropdown-toggle" data-toggle="modal" data-target="#compose-modal">
+                            <i class="fa fa-tasks"></i>
+                            <span  class="label label-danger">A propos</span>
+                        </a>
+                    </li>
+                    <li class="dropdown tasks-menu">
+                        <a href="{% url 'recrues:contactpage' %}" >
+                            <i class="fa fa-tasks"></i>
+                            <span class="label label-danger">Contact</span>
+                        </a>
+                    </li>
+                    <!-- User Account: style can be found in dropdown.less -->
+                    <li class="dropdown user user-menu">
+                        <a href="{% url 'recrues:logout' %}" >
+                            <!--<i class="glyphicon glyphicon-user"></i>-->
+                            <span>Logout <!--<i class="caret"></i>-->
+                                Hello <i>{{user.username}}</i>
+                                
+                            </span>
+                        </a>
+                    </li>
+                
+                </ul>
+                <!--{% endif %}-->
+                
+            </div>
+            
+        </nav>
+        <!--second header-->
+        <!--{% if request.user.is_authenticated %}-->
+        <div class="top-logo">
+            <div class="logo">
+                <div class="logo-table">
+                    <div class="push push-address">
+                        <h1 class="title title-25">Agence Familiale</h1>
+                        <!--<p>
+                            <strong>Responsable de la Compagnie: Eric TCHOUTE</strong>
+                        </p>
+                        <p>Tel: +237 675692431 / 656488212</p>
+                        <p class="clr-or">
+                            <strong>tomiyems@gmail.com</strong>
+                        </p>-->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="push push-go-to-page orange">
+                <h3 class="title title-20">
+                    Obtenez un devis
+                    <span class="border-title">
+                        "x"
+                    </span>
+                </h3>
+                <p>
+                    Nous etudierons ensemble votre situation pour trouveer votre solution de garde d'enfants. N'hesitez pas a nous contacter !
+                </p>
+                <a href="{% url 'recrues:contactpage' %}" title class="btn whiteBlack">"Contactez-nous"
+                </a>
+            </div>
+            <span class="open-menu"></span>
+        </div>
+        <nav class="nav"></nav>
+        <!--{% endif %}-->
+    </header>
+    <script>
+        function validateForm()                                    
+    { 
+        var name = document.forms["contactForm"]["name"];
+        var name2 = document.forms["contactForm"]["name2"];
+        var tel = document.forms["contactForm"]["phone"];               
+        var email = document.forms["contactForm"]["email"];
+        var vil = document.forms["contactForm"]["ville"];    
+        var message = document.forms["contactForm"]["message"];   
+       
+        if (name.value == "")                                  
+        { 
+            document.getElementById('errorname').innerHTML="Veuillez entrez un nom valide";  
+            name.focus(); 
+            return false; 
+        }else{
+            document.getElementById('errorname').innerHTML="";  
+        }
+        if (name2.value == "")                                  
+        { 
+            document.getElementById('errorname2').innerHTML="Veuillez entrez un nom valide";  
+            name2.focus(); 
+            return false; 
+        }else{
+            document.getElementById('errorname2').innerHTML="";  
+        }
+        if (tel.value == "")                                  
+        { 
+            document.getElementById('errorphone').innerHTML="Veuillez entrez un nom valide";  
+            tel.focus(); 
+            return false; 
+        }else{
+            document.getElementById('errorphone').innerHTML="";  
+        }
+           
+        if (email.value == "")                                   
+        { 
+            document.getElementById('erroremail').innerHTML="Veuillez entrez une adresse mail valide"; 
+            email.focus(); 
+            return false; 
+        }else{
+            document.getElementById('erroremail').innerHTML="";  
+        }
+       
+        if (email.value.indexOf("@", 0) < 0)                 
+        { 
+            document.getElementById('erroremail').innerHTML="Veuillez entrez une adresse mail valide"; 
+            email.focus(); 
+            return false; 
+        } 
+       
+        if (email.value.indexOf(".", 0) < 0)                 
+        { 
+            document.getElementById('erroremail').innerHTML="Veuillez entrez une adresse mail valide"; 
+            email.focus(); 
+            return false; 
+        } 
+        if (vil.value == "")                                  
+        { 
+            document.getElementById('errorville').innerHTML="Veuillez entrez un nom valide";  
+            vil.focus(); 
+            return false; 
+        }else{
+            document.getElementById('errorname').innerHTML="";  
+        }
+       
+        if (message.value == "")                           
+        {
+            document.getElementById('errormsg').innerHTML="Veuillez entrez un message valide"; 
+            message.focus(); 
+            return false; 
+        }else{
+            document.getElementById('errormsg').innerHTML="";  
+        }
+       
+        return true; 
+    }
+    </script>
+
+    
