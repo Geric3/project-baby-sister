@@ -1,0 +1,172 @@
+
+{% extends 'mybase.html' %}
+{% load bootstrap4 %}
+{% load static %}
+{% block title %}Contact{% endblock title %}
+
+{% block content %}
+
+<!--<aside class="right-side">-->
+   <section class="content">
+    <div class="wrapper">
+        <section id="visual-page" class="section full-background yellow">
+            <div class="row">
+                <img src=" {% static 'img/Screenshot from 2021-12-22 18-08-19.png' %}" alt="Nos engagements" title="Nos engagements" class="img-engagements" width="100%">
+                <div class="push-visuel-head">
+                    <h2 class="title title-20">NOS ENGAGEMENTS</h2>
+                    <h1 class="legende">La meilleure compagnie pour la garde de vos enfants</h1>
+                    <p>
+                      A l’image de l’assistante maternelle agréée, de la crèche ou de la jeune fille au pair, la nounou à domicile compte parmi les modes de garde des enfants en bas âge. Elle ne dispose pas nécessairement d’un diplôme, d’un agrément ou d’une formation. La nourrice est recrutée par les parents au terme d’un entretien d’embauche.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+   </section>
+   
+   <style>
+         h1{
+       text-align: center;
+     }
+     .form-style {
+       margin:10px auto;
+       width: 400px;
+       padding: 20px 12px 10px 20px;
+       font: 14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     }
+      td {
+       padding: 0;
+       display: block;
+       list-style: none;
+       margin: 10px 0 0 0;
+     }
+     label, h1, p{
+       margin:0 0 3px 0;
+       padding:0px;
+       display:block;
+       font-weight: bold;
+     }
+     .form-style .required{
+       color:red;
+     }
+      input[type=submit],  input[type=reset]{
+       background: #4eb5f1;
+       padding: 8px 15px 8px 15px;
+       border: none;
+       color: #fff;
+     }
+     input[type=submit]:hover,  input[type=reset]:hover{
+       background: #4eb5f1;
+       box-shadow:none;
+       -moz-box-shadow:none;
+       -webkit-box-shadow:none;
+     }
+     .form-style .field-textarea{
+       height: 100px;
+     }
+      input[type=text], 
+     input[type=email],
+     textarea{
+       box-sizing: border-box;
+       -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       border:1px solid #BEBEBE;
+       padding: 7px;
+       margin:0px;
+       -webkit-transition: all 0.30s ease-in-out;
+       -moz-transition: all 0.30s ease-in-out;
+       -ms-transition: all 0.30s ease-in-out;
+       -o-transition: all 0.30s ease-in-out;
+       outline: none;  
+     }
+     .form-style .long{
+       width: 100%;
+     }
+     .form-style input[type=text]:focus, 
+     .form-style input[type=email]:focus,
+     .form-style textarea:focus{
+       -moz-box-shadow: 0 0 8px #88D5E9;
+       -webkit-box-shadow: 0 0 8px #88D5E9;
+       box-shadow: 0 0 8px #88D5E9;
+       border: 1px solid #88D5E9;
+     }
+     .error{
+       color: #D8000C;
+       background-color: #FFBABA;
+     }
+     /*input[type=text], input[type=email], textarea {
+        width: 5%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+      }*/
+   </style>
+   <div class="left-nav" style="background-color: rgb(0 0 0 / 5%); height: 530px;
+   overflow: hidden;">
+      <img src=" {% static  'img/Screenshot from 2021-12-31 19-20-40.png' %}" title="" class="imag-large-size">
+   </div>
+   <div class="right-nav" style="background-color: rgb(0 0 0 / 5%); height: 530px; overflow: hidden;">
+      <h1>Formulaire d'inscription pour être nourice d'un enfant</h1>
+      <p style="text-align: center;">Cliquez <a href="{% url 'recrues:updateprofile' %}"> ici </a> pour mettre à jour vos données d'inscription.</p>
+      <form  action=""  method="POST" class="form-style" enctype="multipart/form-data" onsubmit="return validateForm()">
+        {% csrf_token %}
+        {{form}}
+        
+        <input type="submit"  value="Enroll" style="text-align: center;">
+        
+      </form>
+   </div>
+<!--<aside>-->
+
+     <!-- COMPOSE MESSAGE MODAL -->
+     <div class="modal fade" id="compose-modal" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title"><i class="fa fa-envelope-o"></i> A propos de nous!</h3>
+                </div>
+
+                  <div>
+                     <h3>
+                        <strong>
+                           Dans leur quête d’un mode de garde pour leur enfant en bas âge, de nombreux parents optent pour la nounou à domicile. A priori plus chère que la crèche ou l’assistante maternelle agréée, cette solution présente pourtant des avantages certains. Autant dire que le choix d'une nourice ne se fait pas à la légere. Fini le stress pour trouver une nounous en urgence, vous etes au bon endroit. L'administrateur de l' <i style="color: #c73d39;">Agence Familiale</i> vous propose une varieté de nourice exerçant des <i style="color: #4eb5f1;">activés à temps plein ou à temps partiel</i> 
+                           pour la garde de vos enfants. Nous vous mettons en relation avec des nourices de qualité. Nous offrons également aux jeunes ayant les qualités requise dans nos differentes offre d'emplois de <a href="{% url 'recrues:enrollment' %}">s'inscrire sur la plateforme</a>  afin que nus leur mettons en relation avec les parents qui sont dans le besoin de leur service.
+
+                           Pour plus d'information, contacter par email le responsable <i style="color: #c73d39;">Eric TCHOUTE</i>  à l'adresse: tomiyems@gmail.com
+                      </strong>
+                     </h3>
+                  </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+     </div><!-- /.modal -->
+
+
+    <script src="{% static 'js/check_modal.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+
+        <!-- jQuery 2.0.2 -->
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/jquery.min1.js' %}"></script>
+        <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+        <script src="{% static 'js/select.min.js' %}"></script>
+        <!-- jQuery UI 1.10.3 -->
+        <script src="{% static 'js/jquery-ui-1.10.3.min.js' %}" type="text/javascript"></script>
+        <!-- Bootstrap -->
+        <script src="{% static 'js/bootstrap.min.js' %}" type="text/javascript"></script>
+        
+       
+        
+        
+        <!-- Bootstrap WYSIHTML5 -->
+        <!--<script src="{% static 'js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js' %}" type="text/javascript"></script>-->
+       
+
+        <!-- AdminLTE App -->
+        <!--<script src="static/js/AdminLTE/app.js" type="text/javascript"></script>-->
+        
+        <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+        <!--<script src="static/js/AdminLTE/dashboard.js" type="text/javascript"></script> -->       
+
+{% endblock content %}
+
